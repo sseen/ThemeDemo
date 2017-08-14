@@ -40,10 +40,13 @@ class ViewController: UIViewController {
         sender.backgroundColor = oneColor
         sender.tintColor = twoColor
         
+        self.view.tintAdjustmentMode = .dimmed
+        
         self.navigationController?.navigationBar.tintColor = twoColor
     }
 
     @IBAction func ckTwo(_ sender: Any) {
+        self.view.tintAdjustmentMode = .normal
     }
 }
 
